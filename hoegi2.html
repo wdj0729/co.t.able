@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>코티에이블</title>
+    <style>
+    .mySlides {display:none;}
+    </style>
+
+    <script>
+      //무한 스크롤
+      var page = 1;
+
+      $(window).scroll(function() {
+      	if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+      		for(var i=0; i < 10;i++){
+      			$("#content").append(page + ":내용</br>");
+      		}
+      		page++;
+      	}
+      });
+    </script>
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost:8081/haha/menubar.css" type="text/css">
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--상단 메뉴바-->
+    <div class="menubar">
+   <ul>
+     <a href="index.jsp"><img id='logo' src="http://www.ablehouse.kr/images/logo-light.png" width=180 align=left alt="" onclick="clickBtn();" /></a>
+     <li><a href="#">회사소개</a>
+      <ul>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">직원채용</a></li>
+        <li><a href="#">오시는 길</a></li>
+      </ul>
+     </li>
+     <li><a href="findhouse.jsp">하우스찾기</a></li>
+     <li><a href="procedure.jsp">입주안내</a></li>
+     <li><a href="FAQ.html">자주 묻는 질문</a></li>
+     <li><a href="EmailForm.jsp">문의하기</a>
+     <li><a href="board-insert.jsp">입주신청하기</a>
+    </ul>
+    <hr>
+  </div>
+  <!--화면 내용-->
+  <br><br><br><br><br><br>
+  <!--에이블하우스 내부 사진-->
+  <div class="w3-content w3-display-container" style="text-align:center">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      <h4 align="center"><b>내부 사진</b></h4>
+      <img class="mySlides" src="http://www.ablehouse.kr/school_image/20170719083624__DSC1733.jpg" style="width:100%">
+      <img class="mySlides" src="http://www.ablehouse.kr/school_image/20170719083637__DSC1738.jpg" style="width:100%">
+      <img class="mySlides" src="http://www.ablehouse.kr/school_image/20170719083715__DSC1728.jpg" style="width:100%">
+      <img class="mySlides" src="http://www.ablehouse.kr/school_image/20170719083725__DSC1725.jpg" style="width:100%">
+      <img class="mySlides" src="http://www.ablehouse.kr/school_image/20170719083745__DSC1717.jpg" style="width:100%">
+          <br><br>
+      </div>
+      <table id="hoegi" style="margin-left: auto; margin-right: auto;" border="1" width="800" height="150">
+                            <tbody>
+                                <h4 align="center"><b>방 정보</b></h4>
+                                <tr style="color:black;">
+                                    <th>방</th>
+                                    <th>타입</th>
+                                    <th>면적</th>
+                                    <th>보증금</th>
+                                    <th>월임대료</th>
+                                    <th>입주신청</th>
+                                </tr>
+                                                                <tr>
+                                    <td>Room B1 </td>
+                                    <td>2인실</td>
+                                    <td>-</td>
+                                    <td>300만원</td>
+                                    <td>39만원</td>
+                                                                        <td><font color="red">모집 완료</font></td>
+                                                                    </tr>
+                                                                <tr>
+                                    <td>Room B2 </td>
+                                    <td>2인실</td>
+                                    <td>-</td>
+                                    <td>300만원</td>
+                                    <td>39만원</td>
+                                                                        <td><font color="red">모집 완료</font></td>
+                                                                    </tr>
+                                                                <tr>
+                                    <td>Room B3</td>
+                                    <td>2인실</td>
+                                    <td>-</td>
+                                    <td>300만원</td>
+                                    <td>39만원</td>
+                                                                        <td>모집중</td>
+                                                                    </tr>
+                                                                <tr>
+                                    <td>Room B4</td>
+                                    <td>2인실</td>
+                                    <td>-</td>
+                                    <td>300 만원</td>
+                                    <td>39만원</td>
+                                                                        <td>모집중</td>
+                                                                    </tr>
+                                                            </tbody>
+
+
+
+                        </table>
+<br><hr><br>
+ <div class="row">
+                    <div class="col-md-6">
+                        <iframe align="right" width="77%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=37.5908,127.055&hl=es;z=14&amp;output=embed"></iframe><br />
+
+                    </div>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8QPmb9sPjLPwHZfquFBiS6HVO1RBT5E0&callback=initMap" async defer></script>
+
+                    <div class="col-md-6" align=left style="padding:0px 30px">
+                    							<p><h4><b>위치 및 지역정보</b></h4><br>
+                        						<p>주소 : 서울특별시 동대문구 회기동 회기로25길 12-2</p><br>
+                    	 						<p>- 가까운 역까지의 거리</p>
+                                                <p> 1호선 회기역 : 도보 5분</p><br>
+                                                <p>- 대학교 까지의 거리</p>
+                                                <p>경희대 : 도보 7분</p>
+                                                <p>외대 : 도보 8분 </p><br>
+                                                <p>- 편의시설 : 다수</p>
+                                                <p>- 공과금, 운영비 별도</p>
+                    </div>
+       </div>
+<br>
+
+  <script>
+  //이미지 슬라이드
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+
+
+  <!--맨 아래 하단-->
+          <footer>
+            <div class="container-fluid footer-bottom" style="background:orange;">
+                <div class="container" style="padding:0;">
+                    <div class="row margin-one">
+                        <div class="col-md-1" style="padding:0; margin:10px">
+                           <img src="http://www.ablehouse.kr/images/logo_circle3.png" width=90 height=90 style=width:auto;>
+                        </div>
+                      <div class="col-md-3" style="padding:0; margin-top:25px">
+                        <span style="color: white; font-size: 12px;"> &nbsp;&nbsp;회사소개 &nbsp;&nbsp;|&nbsp;&nbsp;채용안내 &nbsp;&nbsp;| &nbsp;&nbsp;문의하기<br>
+                        &nbsp;&nbsp;ABLE HOUSE 페이스북 페이지<br>
+                        &nbsp;&nbsp;© CO.T.ABLE CORP. ALL RIGHTS RESERVED.</span>
+                      </div>
+                      <div class="col-md-7.5 text-right" style="margin-top:25px">
+                           <span style="color: white; font-size: 12px;">
+                             (주) 코티에이블 대표 안혜린 / 사업자등록번호 185-187-00660 / 대표전화 : 02-871-8412<br>
+                             서울특별시 성동구 사근동 한양대학교 HIT 6층<br>
+                             E-MAIL : ABLEHOUSE@COTABLE.KR / YELLOW ID : @ABLEHOUSE</span>
+                      </div>
+                </div>
+            </div>
+          </div>
+          </footer>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="http://localhost:8081/haha/js/bootstrap.min.js"></script>
+  </body>
+</html>
