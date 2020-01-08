@@ -12,7 +12,7 @@
         <table border="0" width="50%" align="center">
         <h2 style="text-align:center;">문의하기</h2>
             <tr>
-                <td><input type="hidden" name="recipient" size="60" value="wdj930729@gmail.com"/></td>
+                <td><input type="hidden" name="recipient" size="60" value="<!--구글 이메일 주소-->"/></td>
             </tr>
             <tr><td>&nbsp;</td></tr>
             <tr>
