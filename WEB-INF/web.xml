@@ -20,12 +20,12 @@
  
     <context-param>
         <param-name>user</param-name>
-        <param-value>wdj930729@gmail.com</param-value>
+        <param-value>//이메일 주소</param-value>
     </context-param>
  
     <context-param>
         <param-name>pass</param-name>
-        <param-value>ehdwnwldms1!</param-value>
+        <param-value>//이메일 비밀번호</param-value>
     </context-param>
  
     <welcome-file-list>
