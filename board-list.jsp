@@ -51,7 +51,7 @@ try {
 	 	   <td colspan="6">등록된 글이 없습니다.</td>
 	 	  </tr>
 <%
-	 	} else {//자료가 있을떄
+	 	} else {//자료가 있을때
 	 		
 		while(rs.next()) { 
 			int idx = rs.getInt(1); //index number
